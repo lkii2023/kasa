@@ -1,0 +1,55 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #000000;
+  width: 1440px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#footer .footer {
+  margin: 66px auto 29px;
+}
+#footer #logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer #logo-footer .App-logo-footer {
+  display: flex;
+  width: 122px;
+  align-items: center;
+  justify-content: center;
+}
+#footer .logo-text {
+  color: white;
+  margin: 28px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .footer {
+    margin: 66px auto 58px;
+  }
+  #footer .logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 28px 0 0 0;
+    word-wrap: break-word;
+    padding: 0 130px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

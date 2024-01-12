@@ -1,0 +1,67 @@
+@import "../../../styles/Variable.scss";
+
+.collapse {
+  overflow: hidden;
+
+  &.open .visiblecollapse {
+    overflow: hidden;
+    display: flex;
+  }
+
+  &.closed .visiblecollapse {
+    overflow: hidden;
+    padding: 0 10px;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color;
+  border-radius: 5px;
+  padding: 10px;
+  height: 32px;
+  z-index: 1;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    min-height: 32px;
+    padding: 0 10px;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+    }
+  }
+}
+
+.visiblecollapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary-color;
+  color: $primary-color;
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  transition: height 0.3s ease-in-out;
+
+  p {
+    margin: 10px 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
