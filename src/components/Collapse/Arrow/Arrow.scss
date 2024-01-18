@@ -1,0 +1,37 @@
+@import "../../../styles/utils/Mixins.scss";
+
+.arrow {
+  @include flex-center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 24px;
+
+    @media (min-width: 768px) {
+      width: 32px;
+    }
+  }
+}
+
+.rotate-up,
+.rotate-down {
+  @include flex-center;
+  padding: 0;
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate.up {
+  transform: rotate(0deg);
+}
+
+.rotate.down {
+  transform: rotate(-180deg);
+}

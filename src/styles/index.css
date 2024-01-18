@@ -13,9 +13,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   margin: auto;
   height: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,7 +42,4 @@ h1 {
     margin: 0;
     padding-top: 20px;
   }
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }/*# sourceMappingURL=index.css.map */

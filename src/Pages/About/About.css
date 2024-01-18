@@ -1,0 +1,63 @@
+.banner-about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 223px;
+  margin-top: 38px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-about .banner-picture, .banner-about::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.banner-about .banner-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .banner-about {
+    height: 111px;
+    max-width: calc(100% - 40px);
+    margin: 19px auto;
+  }
+  .banner-about .banner-picture, .banner-about::before {
+    border-radius: 10px;
+  }
+}
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  width: 1023px;
+  max-width: 100%;
+  margin: 40px auto 38px;
+  gap: 30px;
+  overflow: hidden;
+}
+.collapse-container .custom-title {
+  font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .collapse-container .custom-title {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .collapse-container {
+    gap: 20px;
+    max-width: calc(100% - 40px);
+    margin: 20px auto 19px;
+  }
+}/*# sourceMappingURL=About.css.map */

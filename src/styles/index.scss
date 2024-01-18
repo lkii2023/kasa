@@ -1,4 +1,4 @@
-@import "./Variable.scss";
+@import "./utils/Variable.scss";
 
 #root {
   margin: 0;
@@ -15,9 +15,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   margin: auto;
   height: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
@@ -45,10 +46,3 @@ h1 {
     padding-top: 20px;
   }
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-$gap: 20px;
