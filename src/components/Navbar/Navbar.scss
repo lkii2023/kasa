@@ -1,0 +1,81 @@
+@import "../../styles/utils/Variable.scss";
+@import "../../styles/utils/Mixins.scss";
+
+nav {
+  display: flex;
+  min-height: 68px;
+  max-width: 1240px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+
+  @media only screen and (max-width: 768px) {
+    min-height: 46px;
+    width: 100%;
+  }
+
+  .nav-bar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+      height: 46px;
+      width: 100%;
+      margin: 0 20px;
+    }
+
+    .App {
+      text-align: center;
+    }
+
+    .App-logo-header {
+      height: 8vmin;
+      pointer-events: none;
+
+      @media only screen and (max-width: 768px) {
+        min-height: 46px;
+        width: 146px;
+      }
+    }
+
+    #link {
+      display: flex;
+      gap: 57px;
+      align-items: center;
+
+      @media only screen and (max-width: 768px) {
+        gap: 26px;
+
+        .Nav-link {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+
+      .Nav-link {
+        margin-left: 0;
+        text-decoration: none;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 24px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+
+        &.active {
+          text-decoration: underline;
+          text-decoration-color: $primary-color;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../styles/utils/Variable.scss";
+@import "../../styles/utils/Mixins.scss";
+
+.not-found,
+.not-found-text {
+  display: flex;
+}
+
+.not-found {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: $primary-color;
+  gap: 139px;
+
+  .code {
+    @include flex-center;
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 139px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 96px;
+      font-weight: 700;
+      margin-top: 113px;
+    }
+  }
+
+  .not-found-text {
+    justify-content: center;
+    font-size: 36px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      word-wrap: break-word;
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 113px;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 139px;
+
+  a {
+    color: $primary-color;
+    text-decoration-line: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 113px;
+  }
+}
